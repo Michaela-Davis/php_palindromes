@@ -1,19 +1,19 @@
-# _FaR_
+# _Palindromes_
 
-#### _This web page allows a user to simulate Find and Replace, 15 February 2017_
+#### _This web page allows a user to check if something is a palindrome, 15 February 2017_
 
 #### By _**Michaela Davis & Sean Peterson**_
 
 
 ## Description
 
-_Find and Replace allows a user enters a string, chooses a word in that string and provides a replacement for that word._
+_This web page allows a user to check if something is a palindrome_
 
 ## Setup/Installation Requirements
 
 * In terminal run the following commands:
 
-1. _Fork and clone this repository from_ [gitHub](https://github.com/michaela-davis/php_find-and-replace.git).
+1. _Fork and clone this repository from_ [gitHub](https://github.com/michaela-davis/php_https://github.com/Michaela-Davis/php_palindromes.git).
 2. Ensure [composer](https://getcomposer.org/) is installed on your computer.
 3. Navigate to the root directory of the project in which ever CLI shell you are using and run the command: `composer install`.
 4. To run tests enter `composer test` in terminal.
@@ -22,12 +22,11 @@ _Find and Replace allows a user enters a string, chooses a word in that string a
 
 ## Specifications
 
-|    *Behavior*   |    *Input 1*    |    *Input 2*    |    *Input 3*    |     *Output*    |
-|-----------------|-----------------|-----------------|-----------------|-----------------|
-| Replace whole words.  | "Walk the cat" | "cat" | "dog" | "Walk the dog" |
-| Replace partial matches.  | "I am walking my cat to the cathedral" | "cat" | "dog" | "I am walking my dog to the doghedral" |
-| Account for all capitalization.  | "I AM WALKING MY CAT TO THE CATHEDRAL" | "cat" | "dog" | "I AM WALKING MY DOG TO THE DOGHEDRAL " |
-| Account for partial capitalization.  | "I am walking my cat TO THE CATHEDRAL" | "cat" | "dog" | "I am walking my dog TO THE DOGHEDRAL " |
+|    *Behavior*   |    *Input*    |     *Output*    |
+|-----------------|---------------|-----------------|
+| Check if something is a palindrome.  | "delight" |   "false" |
+| Check if something is a palindrome.  | "racecar" |   "true" |
+
 
 ## Known Bugs
 
