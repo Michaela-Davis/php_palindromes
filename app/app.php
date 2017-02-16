@@ -1,7 +1,7 @@
 <?php
     date_default_timezone_set('America/Los_Angeles');
     require_once __DIR__."/../vendor/autoload.php";
-    require_once __DIR__."/../src/FaR.php";
+    require_once __DIR__."/../src/Pal.php";
 
     $app = new Silex\Application();
 
@@ -16,9 +16,9 @@
     });
 
     $app->post("/result", function() use ($app) {
-        $newRockPaperScissors = new RockPaperScissors($_POST['user_one'], $_POST['user_two']);
+        $newPal = new Pal($_POST['input_one']);
 
-        $result = $newRockPaperScissors->rpsChecker();
+        $result = $newPal->PalChecker();
 
 
         return $app['twig']->render("result.html.twig", array("result"=>$result));

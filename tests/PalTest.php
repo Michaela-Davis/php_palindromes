@@ -13,7 +13,7 @@
             $result = $test_Pal->PalChecker();
 
         //assert
-            $this->assertEquals(true, $result);
+            $this->assertEquals("true", $result);
         }
 
         function test_PalChecker_false()
@@ -26,7 +26,7 @@
             $result = $test_Pal->PalChecker();
 
         //assert
-            $this->assertEquals(false, $result);
+            $this->assertEquals("false", $result);
         }
 
     }

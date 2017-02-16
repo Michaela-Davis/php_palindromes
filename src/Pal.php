@@ -24,9 +24,9 @@
 
             if ($user_input === $result)
             {
-                return true;
+                return "true";
             }else {
-                return false;
+                return "false";
             }
         }
     }
